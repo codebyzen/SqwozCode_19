@@ -1,0 +1,43 @@
+.offline-banner {
+    position: relative;
+    width: 100%;
+    background: #ffe1d7;
+    border-radius: 20px;
+
+    margin-bottom: 64px;
+
+    padding: 48px 56px;
+
+    box-sizing: border-box;
+
+    z-index: 1;
+
+    &__title {
+        color: #222222;
+        margin-bottom: 24px;
+
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    &__description {
+        color: #272c34;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+
+        max-width: 500px;
+    }
+
+    &__image {
+        position: absolute;
+
+        width: 340px;
+        right: 65px;
+        bottom: 0;
+
+        z-index: -1;
+    }
+}

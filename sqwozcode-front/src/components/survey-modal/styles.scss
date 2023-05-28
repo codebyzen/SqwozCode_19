@@ -1,0 +1,94 @@
+.survey-modal {
+    &__modal {
+        position: relative;
+
+        background-color: #e4e6fd;
+        border-radius: 20px;
+
+        padding: 56px 48px;
+
+        pointer-events: auto;
+
+        z-index: 1;
+
+        overflow: hidden;
+    }
+
+    &__image {
+        position: absolute;
+
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    &__close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
+
+    &__title {
+        color: #272c34;
+
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+
+        padding-bottom: 64px;
+
+        text-align: center;
+
+        max-width: 90%;
+        margin: auto;
+    }
+
+    &__answers {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+
+        margin-bottom: 32px;
+    }
+
+    &__answer {
+        background: #ffffff;
+        border-radius: 20px;
+        width: calc(50% - 12px);
+
+        padding: 24px 16px;
+
+        box-sizing: border-box;
+        margin-bottom: 24px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 56px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__progress {
+        width: 100%;
+        background-color: #eff0ff;
+        height: 4px;
+
+        border-radius: 8px;
+    }
+
+    &__progress-fill {
+        background: #4b4f81;
+        border-radius: 8px;
+
+        transition: all 400ms linear;
+
+        height: 100%;
+    }
+}

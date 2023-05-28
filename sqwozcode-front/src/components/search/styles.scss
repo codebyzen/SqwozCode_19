@@ -1,0 +1,21 @@
+.search {
+    width: 100%;
+    margin-bottom: 16px;
+
+    &__input {
+        border: 2px solid #dcdfe2;
+        border-radius: 50px;
+
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+
+        padding-left: 32px;
+        padding-right: 4px;
+
+        &:hover.ant-input-affix-wrapper {
+            border-color: #dcdfe2;
+            border-inline-end-width: 2px;
+        }
+    }
+}

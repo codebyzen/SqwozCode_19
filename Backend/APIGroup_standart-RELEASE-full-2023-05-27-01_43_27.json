@@ -1,0 +1,615 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "APIGroup_standart",
+		"version": "2023-05-29-03:34:23"
+	},
+	"host": "api.sqwozcode.ru",
+	"paths": {
+		"/createUser": {
+			"post": {
+				"schemes": [
+					"http",
+					"https"
+				],
+				"operationId": "API_createUser",
+				"responses": {
+					"default": {
+						"$ref": "#/responses/default-cors"
+					}
+				},
+				"x-apigateway-backend": {
+					"functionEndpoints": {
+						"description": "",
+						"function-urn": "urn:fss:ru-moscow-1:a5e37de8554247d8956f532f3cf88552:function:default:createUser",
+						"invocation-type": "sync",
+						"timeout": 5000,
+						"version": "latest"
+					},
+					"type": "FUNCTION"
+				},
+				"x-apigateway-cors": true,
+				"x-apigateway-match-mode": "NORMAL",
+				"x-apigateway-request-type": "public"
+			},
+			"options": {
+				"schemes": [
+					"http",
+					"https"
+				],
+				"operationId": "API_createUser_preflight",
+				"responses": {
+					"default": {
+						"$ref": "#/responses/preflight-response"
+					}
+				},
+				"x-apigateway-backend": {
+					"functionEndpoints": {
+						"description": "",
+						"function-urn": "urn:fss:ru-moscow-1:a5e37de8554247d8956f532f3cf88552:function:default:createUser",
+						"invocation-type": "sync",
+						"timeout": 5000,
+						"version": "latest"
+					},
+					"type": "FUNCTION"
+				},
+				"x-apigateway-cors": true,
+				"x-apigateway-match-mode": "NORMAL",
+				"x-apigateway-request-type": "public"
+			}
+		},
+		"/getActivitiesList": {
+			"get": {
+				"schemes": [
+					"http",
+					"https"
+				],
+				"operationId": "API_getActivitiesList",
+				"parameters": [
+					{
+						"type": "string",
+						"name": "clusterIds",
+						"in": "query"
+					},
+					{
+						"type": "string",
+						"name": "dayOfWeek",
+						"in": "query"
+					},
+					{
+						"type": "number",
+						"name": "limit",
+						"in": "query"
+					},
+					{
+						"type": "number",
+						"name": "offset",
+						"in": "query"
+					},
+					{
+						"type": "number",
+						"name": "online",
+						"in": "query"
+					},
+					{
+						"type": "string",
+						"name": "preset",
+						"in": "query"
+					},
+					{
+						"type": "string",
+						"name": "search",
+						"in": "query"
+					},
+					{
+						"type": "string",
+						"name": "type",
+						"in": "query"
+					}
+				],
+				"responses": {
+					"default": {
+						"$ref": "#/responses/default-cors"
+					}
+				},
+				"x-apigateway-backend": {
+					"functionEndpoints": {
+						"description": "",
+						"function-urn": "urn:fss:ru-moscow-1:a5e37de8554247d8956f532f3cf88552:function:default:getActivitiesList",
+						"invocation-type": "sync",
+						"timeout": 5000,
+						"version": "latest"
+					},
+					"parameters": [
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "clusterIds",
+							"origin": "REQUEST",
+							"value": "clusterIds"
+						},
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "dayOfWeek",
+							"origin": "REQUEST",
+							"value": "dayOfWeek"
+						},
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "limit",
+							"origin": "REQUEST",
+							"value": "limit"
+						},
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "offset",
+							"origin": "REQUEST",
+							"value": "offset"
+						},
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "online",
+							"origin": "REQUEST",
+							"value": "online"
+						},
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "preset",
+							"origin": "REQUEST",
+							"value": "preset"
+						},
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "search",
+							"origin": "REQUEST",
+							"value": "search"
+						},
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "type",
+							"origin": "REQUEST",
+							"value": "type"
+						}
+					],
+					"type": "FUNCTION"
+				},
+				"x-apigateway-cors": true,
+				"x-apigateway-match-mode": "NORMAL",
+				"x-apigateway-request-type": "public"
+			}
+		},
+		"/getActivity": {
+			"get": {
+				"schemes": [
+					"http",
+					"https"
+				],
+				"operationId": "API_getActivity",
+				"parameters": [
+					{
+						"type": "number",
+						"name": "id",
+						"in": "query",
+						"required": true
+					}
+				],
+				"responses": {
+					"default": {
+						"$ref": "#/responses/default-cors"
+					}
+				},
+				"x-apigateway-backend": {
+					"functionEndpoints": {
+						"description": "",
+						"function-urn": "urn:fss:ru-moscow-1:a5e37de8554247d8956f532f3cf88552:function:default:getActivity",
+						"invocation-type": "sync",
+						"timeout": 5000,
+						"version": "latest"
+					},
+					"parameters": [
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "id",
+							"origin": "REQUEST",
+							"value": "id"
+						}
+					],
+					"type": "FUNCTION"
+				},
+				"x-apigateway-cors": true,
+				"x-apigateway-match-mode": "NORMAL",
+				"x-apigateway-request-type": "public"
+			}
+		},
+		"/getCategory": {
+			"get": {
+				"schemes": [
+					"http",
+					"https"
+				],
+				"operationId": "API_getCategory",
+				"parameters": [
+					{
+						"type": "string",
+						"name": "online",
+						"in": "query"
+					},
+					{
+						"type": "string",
+						"name": "parentIds",
+						"in": "query"
+					}
+				],
+				"responses": {
+					"default": {
+						"$ref": "#/responses/default-cors"
+					}
+				},
+				"x-apigateway-backend": {
+					"functionEndpoints": {
+						"description": "",
+						"function-urn": "urn:fss:ru-moscow-1:a5e37de8554247d8956f532f3cf88552:function:default:getCategory",
+						"invocation-type": "sync",
+						"timeout": 5000,
+						"version": "latest"
+					},
+					"parameters": [
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "online",
+							"origin": "REQUEST",
+							"value": "online"
+						},
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "parentIds",
+							"origin": "REQUEST",
+							"value": "parentIds"
+						}
+					],
+					"type": "FUNCTION"
+				},
+				"x-apigateway-cors": true,
+				"x-apigateway-match-mode": "NORMAL",
+				"x-apigateway-request-type": "public"
+			}
+		},
+		"/getClusters": {
+			"get": {
+				"schemes": [
+					"http",
+					"https"
+				],
+				"operationId": "API_getClusters",
+				"parameters": [
+					{
+						"type": "number",
+						"name": "clusterId",
+						"in": "query"
+					},
+					{
+						"type": "number",
+						"name": "limit",
+						"in": "query"
+					},
+					{
+						"type": "number",
+						"name": "offset",
+						"in": "query"
+					}
+				],
+				"responses": {
+					"default": {
+						"$ref": "#/responses/default-cors"
+					}
+				},
+				"x-apigateway-backend": {
+					"functionEndpoints": {
+						"description": "",
+						"function-urn": "urn:fss:ru-moscow-1:a5e37de8554247d8956f532f3cf88552:function:default:getClusters",
+						"invocation-type": "sync",
+						"timeout": 5000,
+						"version": "latest"
+					},
+					"parameters": [
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "clusterId",
+							"origin": "REQUEST",
+							"value": "clusterId"
+						},
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "limit",
+							"origin": "REQUEST",
+							"value": "limit"
+						},
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "offset",
+							"origin": "REQUEST",
+							"value": "offset"
+						}
+					],
+					"type": "FUNCTION"
+				},
+				"x-apigateway-cors": true,
+				"x-apigateway-match-mode": "NORMAL",
+				"x-apigateway-request-type": "public"
+			}
+		},
+		"/getRecomends": {
+			"get": {
+				"schemes": [
+					"http",
+					"https"
+				],
+				"operationId": "API_getRecomends",
+				"parameters": [
+					{
+						"type": "number",
+						"name": "id",
+						"in": "query",
+						"required": true
+					},
+					{
+						"type": "string",
+						"name": "ml",
+						"in": "query",
+						"required": true
+					}
+				],
+				"responses": {
+					"default": {
+						"$ref": "#/responses/default-cors"
+					}
+				},
+				"x-apigateway-backend": {
+					"functionEndpoints": {
+						"description": "",
+						"function-urn": "urn:fss:ru-moscow-1:a5e37de8554247d8956f532f3cf88552:function:default:getRecomends",
+						"invocation-type": "sync",
+						"timeout": 5000,
+						"version": "latest"
+					},
+					"parameters": [
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "id",
+							"origin": "REQUEST",
+							"value": "id"
+						},
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "ml",
+							"origin": "REQUEST",
+							"value": "ml"
+						}
+					],
+					"type": "FUNCTION"
+				},
+				"x-apigateway-cors": true,
+				"x-apigateway-match-mode": "NORMAL",
+				"x-apigateway-request-type": "public"
+			}
+		},
+		"/getUser": {
+			"get": {
+				"schemes": [
+					"http",
+					"https"
+				],
+				"operationId": "API_getUser",
+				"parameters": [
+					{
+						"type": "number",
+						"name": "uid",
+						"in": "query",
+						"required": true
+					}
+				],
+				"responses": {
+					"default": {
+						"$ref": "#/responses/default-cors"
+					}
+				},
+				"x-apigateway-backend": {
+					"functionEndpoints": {
+						"description": "",
+						"function-urn": "urn:fss:ru-moscow-1:a5e37de8554247d8956f532f3cf88552:function:default:getUser",
+						"invocation-type": "sync",
+						"timeout": 5000,
+						"version": "latest"
+					},
+					"parameters": [
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "uid",
+							"origin": "REQUEST",
+							"value": "uid"
+						}
+					],
+					"type": "FUNCTION"
+				},
+				"x-apigateway-cors": true,
+				"x-apigateway-match-mode": "NORMAL",
+				"x-apigateway-request-type": "public"
+			}
+		},
+		"/saveSurveyResult": {
+			"get": {
+				"schemes": [
+					"http",
+					"https"
+				],
+				"operationId": "API_saveSurveyResult",
+				"parameters": [
+					{
+						"type": "number",
+						"name": "clusterId",
+						"in": "query",
+						"required": true
+					},
+					{
+						"type": "number",
+						"name": "userId",
+						"in": "query",
+						"required": true
+					}
+				],
+				"responses": {
+					"default": {
+						"$ref": "#/responses/default-cors"
+					}
+				},
+				"x-apigateway-backend": {
+					"functionEndpoints": {
+						"description": "",
+						"function-urn": "urn:fss:ru-moscow-1:a5e37de8554247d8956f532f3cf88552:function:default:saveSurveyResult",
+						"invocation-type": "sync",
+						"timeout": 5000,
+						"version": "latest"
+					},
+					"parameters": [
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "clusterId",
+							"origin": "REQUEST",
+							"value": "clusterId"
+						},
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "userId",
+							"origin": "REQUEST",
+							"value": "userId"
+						}
+					],
+					"type": "FUNCTION"
+				},
+				"x-apigateway-cors": true,
+				"x-apigateway-match-mode": "NORMAL",
+				"x-apigateway-request-type": "public"
+			}
+		},
+		"/searchState": {
+			"get": {
+				"schemes": [
+					"http",
+					"https"
+				],
+				"operationId": "API_searchState",
+				"parameters": [
+					{
+						"type": "string",
+						"name": "search",
+						"in": "query"
+					}
+				],
+				"responses": {
+					"default": {
+						"$ref": "#/responses/default-cors"
+					}
+				},
+				"x-apigateway-backend": {
+					"functionEndpoints": {
+						"description": "",
+						"function-urn": "urn:fss:ru-moscow-1:a5e37de8554247d8956f532f3cf88552:function:default:getStates",
+						"invocation-type": "sync",
+						"timeout": 5000,
+						"version": "latest"
+					},
+					"parameters": [
+						{
+							"description": "",
+							"in": "QUERY",
+							"name": "search",
+							"origin": "REQUEST",
+							"value": "search"
+						}
+					],
+					"type": "FUNCTION"
+				},
+				"x-apigateway-cors": true,
+				"x-apigateway-match-mode": "NORMAL",
+				"x-apigateway-request-type": "public"
+			}
+		}
+	},
+	"responses": {
+		"default-cors": {
+			"description": "response example",
+			"headers": {
+				"Access-Control-Allow-Origin": {
+					"type": "string",
+					"default": "*"
+				}
+			}
+		},
+		"preflight-response": {
+			"description": "response example",
+			"headers": {
+				"Access-Control-Allow-Headers": {
+					"type": "string",
+					"default": "X-Stage,X-Sdk-Date,X-Sdk-Nonce,X-Proxy-Signed-Headers,X-Sdk-Content-Sha256,X-Forwarded-For,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range"
+				},
+				"Access-Control-Allow-Methods": {
+					"type": "string",
+					"default": "GET,POST,PUT,DELETE,HEAD,OPTIONS,PATCH"
+				},
+				"Access-Control-Allow-Origin": {
+					"type": "string",
+					"default": "*"
+				},
+				"Access-Control-Expose-Headers": {
+					"type": "string",
+					"default": "X-Request-Id,X-Apig-Latency,X-Apig-Upstream-Latency,X-Apig-RateLimit-Api,X-Apig-RateLimit-User,X-Apig-RateLimit-App,X-Apig-RateLimit-Ip,X-Apig-RateLimit-Api-Allen"
+				},
+				"Access-Control-Max-Age": {
+					"type": "number",
+					"default": 172800
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"apig-auth-app": {
+			"type": "apiKey",
+			"name": "Authorization",
+			"in": "header",
+			"x-apigateway-auth-type": "AppSigv1"
+		},
+		"apig-auth-app-header": {
+			"type": "apiKey",
+			"name": "Authorization",
+			"in": "header",
+			"x-apigateway-auth-opt": {
+				"appcode-auth-type": "header"
+			},
+			"x-apigateway-auth-type": "AppSigv1"
+		},
+		"apig-auth-iam": {
+			"type": "apiKey",
+			"name": "unused",
+			"in": "header",
+			"x-apigateway-auth-type": "IAM"
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.activities-preset {
+    margin-bottom: 64px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 42px;
+
+        margin-bottom: 32px;
+    }
+
+    &__items {
+        position: relative;
+    }
+
+    &__prev,
+    &__next {
+        position: absolute;
+
+        width: 40px;
+        height: 40px;
+
+        background: #ffffff;
+        filter: drop-shadow(-4px 4px 20px rgba(0, 0, 0, 0.14));
+
+        border-radius: 50%;
+
+        z-index: 10;
+
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+
+        cursor: pointer;
+    }
+
+    &__prev {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__next {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+    }
+}

@@ -1,0 +1,8 @@
+implicit
+numpy
+pandas
+fastapi
+uvicorn
+scipy
+sqlalchemy
+pymysql

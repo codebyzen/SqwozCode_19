@@ -1,0 +1,61 @@
+.auth-modal {
+    &__modal {
+        position: relative;
+
+        background-color: #f0f8de;
+        padding: 56px 140px 133px 140px;
+
+        border-radius: 20px;
+
+        text-align: center;
+
+        pointer-events: auto;
+
+        overflow: hidden;
+
+        z-index: 1;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+
+        color: #272c34;
+
+        padding-bottom: 24px;
+    }
+
+    &__description {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-bottom: 40px;
+    }
+
+    &__input {
+        background: #ffffff;
+        border: 1px solid #222222;
+        border-radius: 50px;
+        padding: 12px 24px;
+
+        width: 100%;
+
+        margin-bottom: 24px;
+    }
+
+    &__image {
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    &__close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
+}

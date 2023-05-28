@@ -1,0 +1,28 @@
+HcCrmTemplateVersion: v1
+Resources:
+  getRecomends:
+    Type: HC::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Runtime: PHP7.3
+      CodeType: inline
+      CodeFileName: index.zip
+      CodeUrl: ""
+      Description: ""
+      MemorySize: 128
+      Timeout: 3
+      Version: latest
+      Environment:
+        Variables: {}
+      InitializerHandler: ""
+      InitializerTimeout: 0
+      EnterpriseProjectId: "0"
+      FuncType: v1
+      CustomImage:
+        enabled: false
+        image: ""
+        command: ""
+        args: ""
+        workingdir: ""
+        uid: ""
+        gid: ""
