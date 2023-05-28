@@ -10,8 +10,8 @@
 
 Дизайн-проект сервиса: https://www.figma.com/file/DVmcGIDphzO7CDwoPSAkrd/Рекомендательный-сервис?type=design&node-id=20-606&t=7WhIxp4b4MYpk085-4
 
-Техническая документация: https://github.com/codebyzen/SqwozCode_19/blob/main/tech_documentation.pdf
+Техническая документация: https://raw.githubusercontent.com/codebyzen/SqwozCode_19/main/tech_documentation.pdf
 
-Презентация: https://github.com/codebyzen/SqwozCode_19/blob/main/presentation.pdf
+Презентация: https://raw.githubusercontent.com/codebyzen/SqwozCode_19/main/presentation.pdf
 
 Ответы на файл test.csv: https://github.com/codebyzen/SqwozCode_19/blob/main/test_answers.csv
