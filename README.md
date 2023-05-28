@@ -13,3 +13,5 @@
 Техническая документация: https://github.com/codebyzen/SqwozCode_19/blob/main/tech_documentation.pdf
 
 Презентация: https://github.com/codebyzen/SqwozCode_19/blob/main/presentation.pdf
+
+Ответы на файл test.csv: https://github.com/codebyzen/SqwozCode_19/blob/main/test_answers.csv
